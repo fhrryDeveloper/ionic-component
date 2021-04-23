@@ -1,0 +1,91 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- <div id="container">
+    <strong>Ready to create an app?</strong>
+    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  </div> -->
+  <ion-item>
+    <ion-label>My Item</ion-label>
+    <ion-badge slot="end">22</ion-badge>
+  </ion-item>
+  <div>
+    <h1>Button Group</h1>
+    <ion-button color="success">Success</ion-button>
+    <ion-button size="large">Large</ion-button>
+    <ion-button>Default</ion-button>
+    <ion-button size="small">Small</ion-button>
+    <ion-button>
+      <ion-icon slot="icon-only" name="star"></ion-icon>
+    </ion-button>
+    <ion-button expand="full" fill="outline">Outline + Full</ion-button>
+  </div>
+  <div>
+    <h1>Riffle Effect</h1>
+    <div class="ion-activatable ripple-parent">
+      A plain div with a bounded ripple effect
+      <ion-ripple-effect></ion-ripple-effect>
+    </div>
+
+    <button class="ion-activatable ripple-parent">
+      A button with a bounded ripple effect
+      <ion-ripple-effect></ion-ripple-effect>
+    </button>
+
+    <div class="ion-activatable ripple-parent">
+      A plain div with an unbounded ripple effect
+      <ion-ripple-effect type="unbounded"></ion-ripple-effect>
+    </div>
+
+    <button class="ion-activatable ripple-parent">
+      A button with an unbounded ripple effect
+      <ion-ripple-effect type="unbounded"></ion-ripple-effect>
+    </button>
+  </div>
+  <div>
+    <h1>Card</h1>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+        <ion-card-title>Card Title</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        Keep close to Nature's heart... and break clear away, once in awhile,
+        and climb a mountain or spend a week in the woods. Wash your spirit clean.
+      </ion-card-content>
+    </ion-card>
+  </div>
+  <div>
+    <h1>Checkbox</h1>
+    <ion-item>
+      <ion-label>Check Box</ion-label>
+      <ion-checkbox color="primary"></ion-checkbox>
+    </ion-item>
+  </div>
+  <div>
+    <h1>Chip</h1>
+    <ion-chip color="secondary">
+      <ion-label color="dark">Secondary w/ Dark label</ion-label>
+    </ion-chip>
+    <ion-chip [disabled]="true">
+      <ion-label>Disabled Chip</ion-label>
+    </ion-chip>
+    <ion-chip>
+      <ion-icon name="pin"></ion-icon>
+      <ion-label>Default</ion-label>
+    </ion-chip>
+  </div>
+</ion-content>
