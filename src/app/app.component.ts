@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MenuController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,18 +8,30 @@ import { MenuController } from '@ionic/angular';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor(private menu: MenuController) { }
-    openFirst() {
-      this.menu.enable(true, 'first');
-      this.menu.open('first');
-    }
+  constructor(private menu: MenuController, public router: Router) { }
 
-    openEnd() {
-      this.menu.open('end');
-    }
+  openFirst() {
+    this.menu.enable(true, 'first');
+    this.menu.open('first');
+  }
 
-    openCustom() {
-      this.menu.enable(true, 'custom');
-      this.menu.open('custom');
-    }
+  openEnd() {
+    this.menu.open('end');
+  }
+
+  openCustom() {
+    this.menu.enable(true, 'custom');
+    this.menu.open('custom');
+  }
+
+  moveToHomePage() {
+    this.router.navigate(['/home']);
+    this.menu.close();
+  }
+
+  moveToContactPage() {
+    this.router.navigate(['/contact']);
+    this.menu.close();
+  }
+
 }

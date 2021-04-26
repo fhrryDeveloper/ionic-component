@@ -27,6 +27,12 @@
     <strong>Ready to create an app?</strong>
     <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
   </div> -->
+   <ion-infinite-scroll>
+    <ion-infinite-scroll-content
+      loadingSpinner="bubbles"
+      loadingText="Loading more data…">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
   <ion-item>
     <ion-label>My Item</ion-label>
     <ion-badge slot="end">22</ion-badge>
@@ -97,5 +103,17 @@
       <ion-icon name="pin"></ion-icon>
       <ion-label>Default</ion-label>
     </ion-chip>
+  </div>
+  <div>
+    <h1>Date</h1>
+    <ion-item>
+      <ion-label>MMMM</ion-label>
+      <ion-datetime displayFormat="MMMM" value="2012-12-15T13:47:20.789"></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>MM DD YY</ion-label>
+      <ion-datetime displayFormat="MM DD YY" placeholder="Select Date"></ion-datetime>
+    </ion-item>
   </div>
 </ion-content>
